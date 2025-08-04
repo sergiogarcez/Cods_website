@@ -12,10 +12,10 @@ export default function Home() {
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
           Transformamos suas ideias em sites, aplicativos e sistemas personalizados que impulsionam seu negócio.
         </p>
-        <Link href="/contato" legacyBehavior>
-          <a className="bg-gradient-to-r from-blue-500 to-purple-700 hover:from-blue-600 hover:to-purple-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105">
+        <Link href="/forms">
+          <button className="bg-gradient-to-r from-blue-500 to-purple-700 hover:from-blue-600 hover:to-purple-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105">
             Solicite um Orçamento
-          </a>
+          </button>
         </Link>
       </section>
 
