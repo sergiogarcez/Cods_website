@@ -1,6 +1,8 @@
 import './globals.css'; // Importa seu CSS global, incluindo o Tailwind
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google'; // Exemplo de importação de fonte
+import Header from './components/header';
+import Footer from './components/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,19 +19,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        {/* Aqui você pode adicionar um cabeçalho global, por exemplo */}
-        {/* <header className="bg-gray-800 text-white p-4 text-center">
-          <nav>
-            <Link href="/" legacyBehavior><a className="mx-2 hover:text-blue-400">Home</a></Link>
-            <Link href="/portfolio" legacyBehavior><a className="mx-2 hover:text-blue-400">Portfólio</a></Link>
-            <Link href="/servicos" legacyBehavior><a className="mx-2 hover:text-blue-400">Serviços</a></Link>
-            <Link href="/contato" legacyBehavior><a className="mx-2 hover:text-blue-400">Contato</a></Link>
-          </nav>
-        </header> */}
-
-        {children} {/* Isso renderiza o conteúdo da sua página (page.tsx) */}
-
-        {/* Aqui você pode adicionar um rodapé global, se não o colocou no page.tsx */}
+      <Header/>
+        {children} {}
+      <Footer/>
       </body>
     </html>
   );
