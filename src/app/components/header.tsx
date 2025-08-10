@@ -11,7 +11,7 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo/Nome do Site */}
         <Link href="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 hover:opacity-80 transition-opacity duration-300">
-          Seu Nome/Agência
+          CoDS
         </Link>
 
         {/* Botão do Menu para Dispositivos Móveis */}

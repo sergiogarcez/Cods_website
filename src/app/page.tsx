@@ -1,10 +1,12 @@
 import Image from 'next/image'; // Importar se você for usar imagens
 import Link from 'next/link';   // Importar se for usar links de navegação
+import HeroSection from './components/heroSection';
+import ThreeBackgroundWrapper from './components/ThreeMiddle';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gray-900 text-white">
-      {/* Seção Principal (Hero Section) */}
+        {/* Seção Principal (Hero Section)
       <section className="text-center mb-16">
         <h1 className="text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
           Seu Parceiro em Desenvolvimento Digital
@@ -17,7 +19,9 @@ export default function Home() {
             Solicite um Orçamento
           </button>
         </Link>
-      </section>
+      </section> */}
+      {/* <HeroSection /> */}
+        <ThreeBackgroundWrapper/>
 
       {/* Seção de Serviços (Exemplo) */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl mb-16">
@@ -41,10 +45,10 @@ export default function Home() {
         <p className="text-lg text-gray-300 mb-8">
           Conheça nosso portfólio e inspire-se com o que podemos criar para você.
         </p>
-        <Link href="/portfolio" legacyBehavior>
-          <a className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300">
+        <Link href="/portfolio">
+          <button className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300">
             Explorar Portfólio
-          </a>
+          </button>
         </Link>
       </section>
 
