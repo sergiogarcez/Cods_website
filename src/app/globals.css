@@ -34,25 +34,3 @@ body {
    transform: translateY(10px);
  }
 }
-
-
-.animate-scattered-float > * {
- animation: float infinite 3s ease-in-out;
- transform: translateY(0); /* Garante que os ícones comecem sem deslocamento */
-}
-
-
-/* Adiciona um pequeno atraso para que os ícones não se movam sincronizadamente */
-.animate-scattered-float > *:nth-child(2n) {
- animation-delay: 0.5s;
-}
-
-
-.animate-scattered-float > *:nth-child(3n) {
- animation-delay: 1s;
-}
-
-
-.animate-scattered-float > *:nth-child(4n) {
- animation-delay: 1.5s;
-}
